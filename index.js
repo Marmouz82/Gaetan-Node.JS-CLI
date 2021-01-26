@@ -37,14 +37,14 @@ axios.get(URLApi)
     });
 })
 
-//raccourci -> librairie de la requete -> httpRequest.open('GET', '/demo.php?city=montpellier', true)
+// raccourci -> librairie de la requete -> httpRequest.open('GET', '/demo.php?city=montpellier', true)
 // axios.get("https://date.nager.at/Api/v2/PublicHolidays/2021/BE");
-//axios prends les valeurs de ce doc et les retournes -> https://date.nager.at/api/v2/PublicHolidays/2002/BE
+// axios prends les valeurs de ce doc et les retournes -> https://date.nager.at/api/v2/PublicHolidays/2002/BE
 
 
-//DOC:
-//https://practicalprogramming.fr/node-js-api/
-//https://github.com/JustFS/node-api/blob/master/index.js
+// DOC:
+// https://practicalprogramming.fr/node-js-api/
+// https://github.com/JustFS/node-api/blob/master/index.js
 
 // API:
-//https://date.nager.at/Api
+// https://date.nager.at/Api
