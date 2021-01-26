@@ -1,26 +1,26 @@
 
 // #!/usr/bin/env node
 
-//déclarer les modules pr qu'il trouve les fonctions
-//require appele les extensions installées dans le terminal
+// déclarer les modules pr qu'il trouve les fonctions
+// require appele les extensions installées dans le terminal
 const { getCode } = require('country-list');
 const axios = require('axios').default;
 
 let ArgsInput = process.argv.slice(2);
-//2 renvoie le pays  -> node . Belgium dans la console doit renvoyer Belgium
-//2 prend l'attribut
+// 2 renvoie le pays  -> node . Belgium dans la console doit renvoyer Belgium
+// 2 prend l'attribut
 // 1 renvoie le chemin du dossier
 let CountryInput = ArgsInput[0];
 let YearInput = ArgsInput[1];
-//0 -> veut dire que ça doit prendre la première valeur de array
+// 0 -> veut dire que ça doit prendre la première valeur de array
 console.log(CountryInput);
 
-//node . Belgium dans la console doit renvoyer Belgium
-//converti le nom du pays en code à 2 chiffres qui est utilisé pr l'url
+// node . Belgium dans la console doit renvoyer Belgium
+// converti le nom du pays en code à 2 chiffres qui est utilisé pr l'url
 let CountryCode = getCode(CountryInput);
 console.log(CountryCode);
 
-//génère l'url avec l'année des congés et sur quel pays
+// génère l'url avec l'année des congés et sur quel pays
 let CurrentYear = new Date().getFullYear()
 console.log(CurrentYear);
 
